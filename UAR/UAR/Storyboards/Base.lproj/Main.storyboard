@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OiL-DW-9cy">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--UAR-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="PINViewController" id="BYZ-38-t0r" customClass="PINViewController" customModule="UAR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uWQ-HW-jQD" customClass="PinCodeTextField" customModule="UAR">
+                                <rect key="frame" x="16" y="316" width="343" height="35"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="rgG-Z7-f37"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="underlineWidth">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="characterLimit">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" red="0.1215686275" green="0.15686274510000001" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="secureText" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uWQ-HW-jQD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Oe9-td-0J7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uWQ-HW-jQD" secondAttribute="trailing" constant="16" id="QRn-Uk-Fff"/>
+                            <constraint firstItem="uWQ-HW-jQD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="xPi-iD-zUh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="UAR" id="mj7-MQ-ddb"/>
+                    <connections>
+                        <outlet property="pinCodeTextField" destination="uWQ-HW-jQD" id="GBI-3a-75H"/>
+                        <segue destination="yl4-Rh-wDk" kind="show" identifier="WalletSegue" id="gfh-Nn-B28"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="824.79999999999995" y="132.68365817091455"/>
+        </scene>
+        <!--ChangePIN View Controller-->
+        <scene sceneID="lRP-10-ZLi">
+            <objects>
+                <viewController id="2ta-mZ-27x" customClass="ChangePINViewController" customModule="UAR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ixF-aI-eMd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FUa-HA-K70" customClass="PinCodeTextField" customModule="UAR">
+                                <rect key="frame" x="16" y="80" width="343" height="35"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="xJ6-7J-gMp"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="underlineWidth">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="characterLimit">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" red="0.1215686275" green="0.15686274510000001" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="secureText" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zL5-GJ-ctE" customClass="PinCodeTextField" customModule="UAR">
+                                <rect key="frame" x="16" y="160" width="343" height="35"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="PmJ-pE-7OU"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="underlineWidth">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="characterLimit">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" red="0.1215686275" green="0.15686274510000001" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="secureText" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter new PIN:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vBW-NU-9yG">
+                                <rect key="frame" x="16" y="131" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cON-P3-NYd" customClass="PinCodeTextField" customModule="UAR">
+                                <rect key="frame" x="16" y="240" width="343" height="35"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="wPZ-Lv-Pt5"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="underlineWidth">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="characterLimit">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" red="0.1215686275" green="0.15686274510000001" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="secureText" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Re-enter your new PIN:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uX3-f6-N7Y">
+                                <rect key="frame" x="16" y="211" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zL5-GJ-ctE" firstAttribute="leading" secondItem="vBW-NU-9yG" secondAttribute="leading" id="0kx-Q4-c0w"/>
+                            <constraint firstItem="vBW-NU-9yG" firstAttribute="top" secondItem="FUa-HA-K70" secondAttribute="bottom" constant="16" id="4Zg-xh-e5n"/>
+                            <constraint firstItem="uX3-f6-N7Y" firstAttribute="top" secondItem="zL5-GJ-ctE" secondAttribute="bottom" constant="16" id="6gp-Jh-BQN"/>
+                            <constraint firstItem="zL5-GJ-ctE" firstAttribute="trailing" secondItem="FUa-HA-K70" secondAttribute="trailing" id="I5u-fz-5oF"/>
+                            <constraint firstItem="uX3-f6-N7Y" firstAttribute="trailing" secondItem="vBW-NU-9yG" secondAttribute="trailing" id="NTT-vu-Uyh"/>
+                            <constraint firstItem="uX3-f6-N7Y" firstAttribute="leading" secondItem="vBW-NU-9yG" secondAttribute="leading" id="OwM-pP-hYC"/>
+                            <constraint firstItem="vBW-NU-9yG" firstAttribute="trailing" secondItem="FUa-HA-K70" secondAttribute="trailing" id="Pfa-T7-Ox0"/>
+                            <constraint firstItem="FUa-HA-K70" firstAttribute="leading" secondItem="bX7-GR-h1k" secondAttribute="leading" constant="16" id="WEr-20-apN"/>
+                            <constraint firstItem="cON-P3-NYd" firstAttribute="trailing" secondItem="zL5-GJ-ctE" secondAttribute="trailing" id="abK-zs-E9p"/>
+                            <constraint firstItem="cON-P3-NYd" firstAttribute="top" secondItem="uX3-f6-N7Y" secondAttribute="bottom" constant="8" id="cyl-t6-vLk"/>
+                            <constraint firstItem="bX7-GR-h1k" firstAttribute="trailing" secondItem="FUa-HA-K70" secondAttribute="trailing" constant="16" id="dPf-4U-kpR"/>
+                            <constraint firstItem="cON-P3-NYd" firstAttribute="leading" secondItem="uX3-f6-N7Y" secondAttribute="leading" id="dfD-p1-xYC"/>
+                            <constraint firstItem="zL5-GJ-ctE" firstAttribute="top" secondItem="vBW-NU-9yG" secondAttribute="bottom" constant="8" id="e1O-M3-6Jm"/>
+                            <constraint firstItem="FUa-HA-K70" firstAttribute="top" secondItem="bX7-GR-h1k" secondAttribute="top" constant="16" id="haf-C0-grq"/>
+                            <constraint firstItem="vBW-NU-9yG" firstAttribute="leading" secondItem="FUa-HA-K70" secondAttribute="leading" id="lCR-0G-E1Z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bX7-GR-h1k"/>
+                    </view>
+                    <connections>
+                        <outlet property="enterPinLabel" destination="vBW-NU-9yG" id="d8x-ib-Aqq"/>
+                        <outlet property="newPinCodeTextField" destination="zL5-GJ-ctE" id="SWU-CO-YSP"/>
+                        <outlet property="pinCodeTextField" destination="FUa-HA-K70" id="hYC-mq-ZqX"/>
+                        <outlet property="reenterPinLabel" destination="uX3-f6-N7Y" id="wME-bd-w8f"/>
+                        <outlet property="repeatPinCodeTextField" destination="cON-P3-NYd" id="9Mm-M8-oMm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cdb-IC-2vn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2384.8000000000002" y="132.68365817091455"/>
+        </scene>
+        <!--Wallet-->
+        <scene sceneID="nGE-7s-0yS">
+            <objects>
+                <viewController title="Wallet" id="yl4-Rh-wDk" customClass="WalletViewController" customModule="UAR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hec-7S-vWo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xPV-HR-O2n">
+                                <rect key="frame" x="16" y="617" width="46" height="30"/>
+                                <state key="normal" title="Create"/>
+                                <connections>
+                                    <action selector="createButtonTapped" destination="yl4-Rh-wDk" eventType="touchUpInside" id="p9c-5c-3pb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B8S-Uq-xkb">
+                                <rect key="frame" x="321" y="617" width="38" height="30"/>
+                                <state key="normal" title="Show"/>
+                                <connections>
+                                    <action selector="showButtonTapped" destination="yl4-Rh-wDk" eventType="touchUpInside" id="gXt-QK-pM9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tvm-IH-s9S">
+                                <rect key="frame" x="16" y="80" width="343" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Wh-rE-7gj">
+                                <rect key="frame" x="16" y="96" width="343" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="6Wh-rE-7gj" secondAttribute="trailing" constant="16" id="2CT-nD-zGQ"/>
+                            <constraint firstItem="B8S-Uq-xkb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Hec-7S-vWo" secondAttribute="leading" constant="20" symbolic="YES" id="6FF-BW-PlC"/>
+                            <constraint firstItem="6Wh-rE-7gj" firstAttribute="top" secondItem="tvm-IH-s9S" secondAttribute="bottom" constant="16" id="9nH-UB-jPz"/>
+                            <constraint firstItem="EAg-Yy-mOE" firstAttribute="trailing" secondItem="B8S-Uq-xkb" secondAttribute="trailing" constant="16" id="CnX-ok-OtD"/>
+                            <constraint firstItem="6Wh-rE-7gj" firstAttribute="leading" secondItem="Hec-7S-vWo" secondAttribute="leading" constant="16" id="S0m-Oa-pSy"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xPV-HR-O2n" secondAttribute="trailing" constant="20" symbolic="YES" id="ciM-r8-kpZ"/>
+                            <constraint firstItem="EAg-Yy-mOE" firstAttribute="bottom" secondItem="xPV-HR-O2n" secondAttribute="bottom" constant="20" id="nI4-6G-Mhe"/>
+                            <constraint firstItem="EAg-Yy-mOE" firstAttribute="trailing" secondItem="tvm-IH-s9S" secondAttribute="trailing" constant="16" id="pSJ-Qi-KrE"/>
+                            <constraint firstItem="tvm-IH-s9S" firstAttribute="leading" secondItem="EAg-Yy-mOE" secondAttribute="leading" constant="16" id="uC1-1N-cnP"/>
+                            <constraint firstItem="EAg-Yy-mOE" firstAttribute="bottom" secondItem="B8S-Uq-xkb" secondAttribute="bottom" constant="20" id="x5b-LY-kdn"/>
+                            <constraint firstItem="tvm-IH-s9S" firstAttribute="top" secondItem="EAg-Yy-mOE" secondAttribute="top" constant="16" id="xKC-XC-VBA"/>
+                            <constraint firstItem="xPV-HR-O2n" firstAttribute="leading" secondItem="EAg-Yy-mOE" secondAttribute="leading" constant="16" id="xf8-fi-ZFB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EAg-Yy-mOE"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Wallet" id="I0X-iw-T1W">
+                        <barButtonItem key="rightBarButtonItem" title="Change PIN" id="v0j-FX-85T">
+                            <connections>
+                                <segue destination="2ta-mZ-27x" kind="show" id="FNT-Bg-3Ly"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addressLabel" destination="tvm-IH-s9S" id="19s-kC-S4c"/>
+                        <outlet property="privateKeyLabel" destination="6Wh-rE-7gj" id="gfT-dn-qwr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cOn-3V-BPA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1645.5999999999999" y="132.68365817091455"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WgG-Hs-NRA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OiL-DW-9cy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eZI-Cb-wDk">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="4pe-xn-jqV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iHI-11-5ZE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136" y="133.13343328335833"/>
+        </scene>
+    </scenes>
+</document>

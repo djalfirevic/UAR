@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		288FAD6498FC444E353AE56F /* libPods-UAR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 798B153E1536C333305695B8 /* libPods-UAR.a */; };
+		C4D971822022F0C30088B0E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D971812022F0C30088B0E7 /* AppDelegate.swift */; };
+		C4D971842022F0C30088B0E7 /* PINViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D971832022F0C30088B0E7 /* PINViewController.swift */; };
+		C4D971872022F0C30088B0E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4D971852022F0C30088B0E7 /* Main.storyboard */; };
+		C4D971892022F0C30088B0E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4D971882022F0C30088B0E7 /* Assets.xcassets */; };
+		C4D9718C2022F0C30088B0E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4D9718A2022F0C30088B0E7 /* LaunchScreen.storyboard */; };
+		C4F70F67202303D600C6A121 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F70F66202303D600C6A121 /* Strings.swift */; };
+		C4F70F692023046100C6A121 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F70F682023046100C6A121 /* Helpers.swift */; };
+		C4F70F6B2023061E00C6A121 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F70F6A2023061E00C6A121 /* Constants.swift */; };
+		C4F70F6D202306B200C6A121 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F70F6C202306B200C6A121 /* Extensions.swift */; };
+		C4F70F6F2023092E00C6A121 /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F70F6E2023092E00C6A121 /* WalletViewController.swift */; };
+		C4F70F7120230BCF00C6A121 /* ChangePINViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F70F7020230BCF00C6A121 /* ChangePINViewController.swift */; };
+		C4F70F73202317DC00C6A121 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F70F72202317DC00C6A121 /* Protocols.swift */; };
+		C4F70F7C2024409900C6A121 /* PinCodeTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F70F752024409900C6A121 /* PinCodeTextFieldDelegate.swift */; };
+		C4F70F7D2024409900C6A121 /* PinCodeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F70F762024409900C6A121 /* PinCodeTextField.swift */; };
+		C4F70F7E2024409900C6A121 /* TextHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F70F782024409900C6A121 /* TextHelper.swift */; };
+		C4F70F7F2024409900C6A121 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F70F7A2024409900C6A121 /* IntExtension.swift */; };
+		C4F70F802024409900C6A121 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F70F7B2024409900C6A121 /* StringExtension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7088FAB9452CA6B6C7C3B08E /* Pods-UAR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UAR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UAR/Pods-UAR.debug.xcconfig"; sourceTree = "<group>"; };
+		798B153E1536C333305695B8 /* libPods-UAR.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UAR.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4D9717E2022F0C30088B0E7 /* UAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4D971812022F0C30088B0E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C4D971832022F0C30088B0E7 /* PINViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PINViewController.swift; sourceTree = "<group>"; };
+		C4D971862022F0C30088B0E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C4D971882022F0C30088B0E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4D9718B2022F0C30088B0E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C4D9718D2022F0C30088B0E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4F70F66202303D600C6A121 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		C4F70F682023046100C6A121 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		C4F70F6A2023061E00C6A121 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C4F70F6C202306B200C6A121 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C4F70F6E2023092E00C6A121 /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
+		C4F70F7020230BCF00C6A121 /* ChangePINViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePINViewController.swift; sourceTree = "<group>"; };
+		C4F70F72202317DC00C6A121 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		C4F70F752024409900C6A121 /* PinCodeTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinCodeTextFieldDelegate.swift; sourceTree = "<group>"; };
+		C4F70F762024409900C6A121 /* PinCodeTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinCodeTextField.swift; sourceTree = "<group>"; };
+		C4F70F782024409900C6A121 /* TextHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextHelper.swift; sourceTree = "<group>"; };
+		C4F70F7A2024409900C6A121 /* IntExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
+		C4F70F7B2024409900C6A121 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		C4F70F812024411600C6A121 /* UAR-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UAR-Bridging-Header.h"; sourceTree = "<group>"; };
+		C87B1EDC515E085D94BEF266 /* Pods-UAR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UAR.release.xcconfig"; path = "Pods/Target Support Files/Pods-UAR/Pods-UAR.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4D9717B2022F0C30088B0E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				288FAD6498FC444E353AE56F /* libPods-UAR.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6879051FA273523800DB735F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7088FAB9452CA6B6C7C3B08E /* Pods-UAR.debug.xcconfig */,
+				C87B1EDC515E085D94BEF266 /* Pods-UAR.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B9F98F516AA2860A22729AE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				798B153E1536C333305695B8 /* libPods-UAR.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4D971752022F0C30088B0E7 = {
+			isa = PBXGroup;
+			children = (
+				C4D971802022F0C30088B0E7 /* UAR */,
+				C4D9717F2022F0C30088B0E7 /* Products */,
+				6879051FA273523800DB735F /* Pods */,
+				B9F98F516AA2860A22729AE9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C4D9717F2022F0C30088B0E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4D9717E2022F0C30088B0E7 /* UAR.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4D971802022F0C30088B0E7 /* UAR */ = {
+			isa = PBXGroup;
+			children = (
+				C4F70F65202303C400C6A121 /* Utilities */,
+				C4D971932022F0F60088B0E7 /* Application Delegate */,
+				C4F70F632022FC4300C6A121 /* View Controllers */,
+				C4F70F64202300FA00C6A121 /* Storyboards */,
+				C4D971882022F0C30088B0E7 /* Assets.xcassets */,
+				C4D9718D2022F0C30088B0E7 /* Info.plist */,
+				C4F70F812024411600C6A121 /* UAR-Bridging-Header.h */,
+			);
+			path = UAR;
+			sourceTree = "<group>";
+		};
+		C4D971932022F0F60088B0E7 /* Application Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				C4D971812022F0C30088B0E7 /* AppDelegate.swift */,
+			);
+			path = "Application Delegate";
+			sourceTree = "<group>";
+		};
+		C4F70F632022FC4300C6A121 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C4D971832022F0C30088B0E7 /* PINViewController.swift */,
+				C4F70F6E2023092E00C6A121 /* WalletViewController.swift */,
+				C4F70F7020230BCF00C6A121 /* ChangePINViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		C4F70F64202300FA00C6A121 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C4D9718A2022F0C30088B0E7 /* LaunchScreen.storyboard */,
+				C4D971852022F0C30088B0E7 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C4F70F65202303C400C6A121 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C4F70F742024409900C6A121 /* PinCodeTextField */,
+				C4F70F66202303D600C6A121 /* Strings.swift */,
+				C4F70F6A2023061E00C6A121 /* Constants.swift */,
+				C4F70F682023046100C6A121 /* Helpers.swift */,
+				C4F70F6C202306B200C6A121 /* Extensions.swift */,
+				C4F70F72202317DC00C6A121 /* Protocols.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C4F70F742024409900C6A121 /* PinCodeTextField */ = {
+			isa = PBXGroup;
+			children = (
+				C4F70F752024409900C6A121 /* PinCodeTextFieldDelegate.swift */,
+				C4F70F762024409900C6A121 /* PinCodeTextField.swift */,
+				C4F70F772024409900C6A121 /* TextHelper */,
+				C4F70F792024409900C6A121 /* Extensions */,
+			);
+			path = PinCodeTextField;
+			sourceTree = "<group>";
+		};
+		C4F70F772024409900C6A121 /* TextHelper */ = {
+			isa = PBXGroup;
+			children = (
+				C4F70F782024409900C6A121 /* TextHelper.swift */,
+			);
+			path = TextHelper;
+			sourceTree = "<group>";
+		};
+		C4F70F792024409900C6A121 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C4F70F7A2024409900C6A121 /* IntExtension.swift */,
+				C4F70F7B2024409900C6A121 /* StringExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4D9717D2022F0C30088B0E7 /* UAR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4D971902022F0C30088B0E7 /* Build configuration list for PBXNativeTarget "UAR" */;
+			buildPhases = (
+				47232D9856A1442E5EA4E52A /* [CP] Check Pods Manifest.lock */,
+				C4D9717A2022F0C30088B0E7 /* Sources */,
+				C4D9717B2022F0C30088B0E7 /* Frameworks */,
+				C4D9717C2022F0C30088B0E7 /* Resources */,
+				C18363C800FAD7D2991E4BBC /* [CP] Embed Pods Frameworks */,
+				A5C5190FB1C44FFE76BDE8B5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UAR;
+			productName = UAR;
+			productReference = C4D9717E2022F0C30088B0E7 /* UAR.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4D971762022F0C30088B0E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Djuro Alfirevic";
+				TargetAttributes = {
+					C4D9717D2022F0C30088B0E7 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C4D971792022F0C30088B0E7 /* Build configuration list for PBXProject "UAR" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C4D971752022F0C30088B0E7;
+			productRefGroup = C4D9717F2022F0C30088B0E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4D9717D2022F0C30088B0E7 /* UAR */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4D9717C2022F0C30088B0E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4D9718C2022F0C30088B0E7 /* LaunchScreen.storyboard in Resources */,
+				C4D971892022F0C30088B0E7 /* Assets.xcassets in Resources */,
+				C4D971872022F0C30088B0E7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		47232D9856A1442E5EA4E52A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UAR-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5C5190FB1C44FFE76BDE8B5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UAR/Pods-UAR-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C18363C800FAD7D2991E4BBC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-UAR/Pods-UAR-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PinCodeTextField/PinCodeTextField.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PinCodeTextField.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UAR/Pods-UAR-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4D9717A2022F0C30088B0E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4F70F6B2023061E00C6A121 /* Constants.swift in Sources */,
+				C4F70F6D202306B200C6A121 /* Extensions.swift in Sources */,
+				C4F70F6F2023092E00C6A121 /* WalletViewController.swift in Sources */,
+				C4F70F73202317DC00C6A121 /* Protocols.swift in Sources */,
+				C4F70F7E2024409900C6A121 /* TextHelper.swift in Sources */,
+				C4D971842022F0C30088B0E7 /* PINViewController.swift in Sources */,
+				C4F70F7C2024409900C6A121 /* PinCodeTextFieldDelegate.swift in Sources */,
+				C4F70F7F2024409900C6A121 /* IntExtension.swift in Sources */,
+				C4F70F802024409900C6A121 /* StringExtension.swift in Sources */,
+				C4F70F7D2024409900C6A121 /* PinCodeTextField.swift in Sources */,
+				C4F70F7120230BCF00C6A121 /* ChangePINViewController.swift in Sources */,
+				C4F70F67202303D600C6A121 /* Strings.swift in Sources */,
+				C4D971822022F0C30088B0E7 /* AppDelegate.swift in Sources */,
+				C4F70F692023046100C6A121 /* Helpers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C4D971852022F0C30088B0E7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4D971862022F0C30088B0E7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C4D9718A2022F0C30088B0E7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4D9718B2022F0C30088B0E7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C4D9718E2022F0C30088B0E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C4D9718F2022F0C30088B0E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4D971912022F0C30088B0E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7088FAB9452CA6B6C7C3B08E /* Pods-UAR.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UAR/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.djuroalfirevic.UAR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$PROJECT_NAME/$PROJECT_NAME-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C4D971922022F0C30088B0E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C87B1EDC515E085D94BEF266 /* Pods-UAR.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UAR/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.djuroalfirevic.UAR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$PROJECT_NAME/$PROJECT_NAME-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4D971792022F0C30088B0E7 /* Build configuration list for PBXProject "UAR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4D9718E2022F0C30088B0E7 /* Debug */,
+				C4D9718F2022F0C30088B0E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4D971902022F0C30088B0E7 /* Build configuration list for PBXNativeTarget "UAR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4D971912022F0C30088B0E7 /* Debug */,
+				C4D971922022F0C30088B0E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C4D971762022F0C30088B0E7 /* Project object */;
+}
